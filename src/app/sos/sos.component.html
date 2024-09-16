@@ -1,0 +1,9 @@
+
+<div class="main-body">
+   
+    <button class="sos-button" (click)="sendSos()">SOS</button>
+  </div>
+
+  <button (click)="sendSOS()" [disabled]="isSending">
+    {{ isSending ? 'Sending SOS...' : 'SOS' }}
+  </button>
